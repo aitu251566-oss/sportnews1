@@ -1,0 +1,13 @@
+/* Только media queries (mobile-first). Брейкпоинты: 48rem = 768px, 64rem = 1024px */
+
+@media (min-width: 48rem) {
+  .buttons { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-box { flex-direction: row; justify-content: space-between; align-items: center; }
+}
+
+@media (min-width: 64rem) {
+  .hero-box { grid-template-columns: 1.5fr 1fr; align-items: center; gap: 3rem; }
+  .buttons { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+  .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
